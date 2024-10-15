@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Palstoja
+    </title>
+
+</head>
+<style>
+    div,
+    main,
+    header,
+    footer,
+    nav {
+        float: left;
+        border: 1px solid black;
+        width: 65%;
+        height: 200px;
+        margin: 5px;
+        border: 5px solid rgb(128, 128, 72);
+        background-color: beige;
+        text-align: left;
+        padding: 10px;
+    }
+
+    #ylapalkki,
+    #alapalkki {
+        width: auto;
+        height: auto;
+        float: none;
+        clear: both;
+
+    }
+
+    /* Tämä käärii sisäänsä kaikki muut elementit */
+    #wrapper {
+        border: 1px solid black;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        max-width: 1100px;
+        /* Viewport vaikuttaa tähän */
+        min-width: 400px;
+
+    }
+
+    nav {
+        width: 25%;
+    }
+
+    /* Responsiviisuutta varten */
+    img {
+        max-width: 900px;
+        width: 100%;
+    }
+
+    /* Responsiivisuus */
+
+    @media screen and (max-width: 830px) and (min-width: 500px) {
+
+        main,
+        nav {
+
+            float: none;
+            clear: both;
+            width: auto;
+            border: 1px solid black;
+            height: 200px;
+            margin: 5px;
+            border: 5px solid rgb(128, 128, 72);
+
+            text-align: left;
+            padding: 10px;
+        }
+
+    }
+
+    @media screen and (max-width: 500px) {
+        /* Miltä ruutu näyttää kun alle 500 px */
+    }
+</style>
+
+<body>
+    <p></p>
+    <!-- Tämä on kommentti -->
+    <div id="wrapper">
+        <header id="ylapalkki"><img src="img/header.PNG"></header>
+        <main>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error saepe iusto vitae assumenda recusandae
+            incidunt quibusdam nobis facere ipsam inventore maiores beatae consectetur, numquam minus ab quidem officiis
+            dignissimos. Placeat.
+            Totam perferendis commodi nostrum saepe cupiditate voluptatibus ad delectus ullam officia adipisci! Minus
+            commodi corrupti ratione recusandae? Saepe laudantium impedit placeat aperiam, nesciunt voluptatum earum,
+            nihil doloremque accusamus dicta deserunt!
+            Nostrum, tempora blanditiis nihil asperiores iusto aut vero, error, ab harum voluptatum quibusdam!
+            Dignissimos deserunt cupiditate error vel, corporis iure pariatur ducimus ad, et autem, dolorem eveniet ea
+            consequatur earum? </main>
+        <nav>Toinen palsta</nav>
+        <footer id="alapalkki"> Neljäs palsta</footer>
+
+    </div>
+</body>
+
+</html>
